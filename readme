@@ -9,3 +9,6 @@ Software content:
         express
         Using Typescript we need to install modules for Typescript (@types/express, @types/node, ts-node, Typescript)
         *using -D in the final to tell that these packages is only for development
+
+Comments:
+    In package.json file, if using windows u need to add "SET" at the beggining of start script.
