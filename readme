@@ -1,0 +1,11 @@
+Crush manager API
+    Created by by Jakeliny (Fcamara)
+
+Software content:
+    Typescript - Using CommonJS
+    MongoDB
+    Nodejs with:
+        npm
+        express
+        Using Typescript we need to install modules for Typescript (@types/express, @types/node, ts-node, Typescript)
+        *using -D in the final to tell that these packages is only for developm
