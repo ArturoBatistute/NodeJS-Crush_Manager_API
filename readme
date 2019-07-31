@@ -11,4 +11,4 @@ Software content:
         *using -D in the final to tell that these packages is only for development
 
 Comments:
-    In package.json file, if using windows u need to add "SET" at the beggining of start script.
+    In package.json file, if using windows u need to add "SET" at the beggining of start script and "&" after the NODE (U can use cross-env too)

@@ -9,7 +9,7 @@ class App{
     }
 
     routes(){
-        this.app.route('/').get((req, res) => res.status(200).json({"result": "hello world"})) //error function
+        this.app.route('/').get( (req,res) => res.status(200).json({"result": "Hello World"}) );
     }
 }
 
