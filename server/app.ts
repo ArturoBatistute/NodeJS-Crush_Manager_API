@@ -1,10 +1,15 @@
 import * as express from 'express'; //Import Express Module
+import database from './db';
 
 class App{
     public app: express.Application;
+    private database: database;
 
     constructor (){ //first method to initialize when request this class
         this.app = express();
+        this.database = new database(); //Instance the connection
+        this.database.createConnection();
+
         this.routes();
     }
 

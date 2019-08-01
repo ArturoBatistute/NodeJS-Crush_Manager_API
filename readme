@@ -11,3 +11,6 @@ Software content:
 
 Comments:
     In package.json file, if using windows u need to add "SET" at the beggining of start script and "&" after the NODE (U can use cross-env too)
+    U need to install MongoDB and run a server with same name that u declare on db.ts file
+
+    stop in 42:40
