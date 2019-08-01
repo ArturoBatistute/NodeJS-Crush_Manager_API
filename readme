@@ -11,14 +11,17 @@ Software content:
 
 Steps:
 1-Create our application(app.ts)
-2-Create our server.ts
+2-Create our server(server.ts)
 3-Create our database(db.ts) to set Mangoose conection an answers for our url
-4-
+4-Create our structure(model.ts)(Our collection is equal to table)
+5-Create our way to send/call data (controller.ts)
+6-
 
 
 
 *Comments:
     In package.json file, if using windows u need to add "SET" at the beggining of start script and "&" after the NODE (U can use cross-env too)
     U need to install MongoDB and run a server with same name that u declare on db.ts file
+    In API we always need to use a (req, res)
 
-    stop in 42:40
+    stop in 57:51

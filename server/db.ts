@@ -15,7 +15,7 @@ class Database {
         this.logger(this.dburl);
     }
 
-    logger(url){ //Add answers for url
+    logger(url) { //Add answers for url
         this.dbconnection = mongoose.connection;
         this.dbconnection.on('connected', () => console.log('mongoose connected'));
         this.dbconnection.on('error', error  => console.error.bind(console, "erro na conexão: " + error)); //Output the error for the user
