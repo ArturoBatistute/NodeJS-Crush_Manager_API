@@ -9,7 +9,15 @@ Software content:
         Using Typescript we need to install modules for Typescript (@types/express, @types/node, @types/mongoose, ts-node, Typescript)
         *using -D in the final to tell that these packages is only for development
 
-Comments:
+Steps:
+1-Create our application(app.ts)
+2-Create our server.ts
+3-Create our database(db.ts) to set Mangoose conection an answers for our url
+4-
+
+
+
+*Comments:
     In package.json file, if using windows u need to add "SET" at the beggining of start script and "&" after the NODE (U can use cross-env too)
     U need to install MongoDB and run a server with same name that u declare on db.ts file
 
