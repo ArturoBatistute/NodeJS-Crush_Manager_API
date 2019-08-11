@@ -17,11 +17,11 @@ class Controller {  //Functions to send/call data from mongoose
         return model.find(id);
     }
     selectOne(req, res) { //use the return of getCrushs
-        const id = { _id: req.param.id}
+        const id = { _id: req.params.id}
 
         this.getCrushesByID(id)
-        .then(crushs => res.status(200).json({'result': crushs}))
-        .catch(err => res.status(400).json({'result': err}));
+            .then(crushs => res.status(200).json({'result': crushs}))
+            .catch(err => res.status(400).json({'result': err}));
     }
 }
 export default Controller;
