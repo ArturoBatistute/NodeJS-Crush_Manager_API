@@ -15,7 +15,7 @@ Steps:
 3-Create our database(db.ts) to set Mangoose conection an answers for our url
 4-Create our structure(model.ts)(Our collection is equal to table)
 5-Create our way to send/call data (controller.ts)
-6-
+6-Create a "route" to show content = selectOne
 
 
 
@@ -24,4 +24,4 @@ Steps:
     U need to install MongoDB and run a server with same name that u declare on db.ts file
     In API we always need to use a (req, res)
 
-    stop in 57:51
+    stop in 01:05:12
