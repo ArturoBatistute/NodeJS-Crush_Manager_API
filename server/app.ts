@@ -18,7 +18,7 @@ class App {
         this.routes();
     }
 
-    middleware (){
+    middleware() {
         this.app.use(bodyparser.json());
         this.app.use(bodyparser.urlencoded({extended: true}));
     }
@@ -29,6 +29,7 @@ class App {
         this.app.route('/api/crushs/:id').get( (req,res) => this.controller.selectOne(req, res)); //use : to show a content
         this.app.route('/api/crushs/:id').delete( (req,res) => this.controller.delete(req, res));
         this.app.route('/api/crushs/:id').put( (req,res) => this.controller.update(req, res));
+        this.app.route('/api/crushs').post( (req,res) => this.controller.insert(req, res));
     }
 }
 

@@ -12,8 +12,8 @@ class Controller {  //Functions to send/call data from mongoose
         .catch(err => res.status(400).json({'result': err}));
     }
 
-    //SelectOne for get content
-    getCrushesByID(id){
+    //Get content
+    getCrushesByID(id) {
         return model.find(id);
     }
     selectOne(req, res) { //get the return of getCrushs
@@ -25,7 +25,7 @@ class Controller {  //Functions to send/call data from mongoose
     }
 
     //Delete a content
-    deleteByID(id){
+    deleteByID(id) {
         return model.deleteOne(id);
     }
     delete(req, res) { 
@@ -37,15 +37,27 @@ class Controller {  //Functions to send/call data from mongoose
     }
 
     //Update a content
-    updateCrush(id, data){
+    updateCrush(id, data) {
         return model.findOneAndUpdate(id, data);
     }
-    update(req, res) { 
+    update(req, res) {
         const id = { _id: req.params.id}
         const crush = req.body; //search for a content inside the body
 
         this.updateCrush(id, crush)
-            .then(crushs => res.status(200).json({'result': "ID deleted"}))
+            .then(crushs => res.status(200).json({'result': "ID updated"}))
+            .catch(err => res.status(400).json({'result': err}));
+    }
+
+    //Insert a content
+    createCrush(data) {
+        return model.create(data);
+    }
+    insert(req, res) {
+        const crush = req.body; //search for a content inside the body
+
+        this.createCrush(crush)
+            .then(crushs => res.status(200).json({'result': crushs}))
             .catch(err => res.status(400).json({'result': err}));
     }
 }

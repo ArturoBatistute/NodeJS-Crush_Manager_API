@@ -17,6 +17,7 @@ Steps:
 5-Create our way to send/call data (controller.ts)
 6-Create a "route" for each CRUD item
 7-Install body parser (this way mongo will understand the update int the data)
+8-Finish the CRUD
 
 
 
@@ -24,5 +25,3 @@ Steps:
     In package.json file, if using windows u need to add "SET" at the beggining of start script and "&" after the NODE (U can use cross-env too)
     U need to install MongoDB and run a server with same name that u declare on db.ts file
     In API we always need to use a (req, res)
-
-    stop in 01:19:18
